@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace RPG.Dialouge
+namespace RPG.Dialogue
 {
 
     [System.Serializable]
-    public class DialougeNode
+    public class DialogueNode
     {
         public string UID;
         public string text;
         public string[] children;
+        public Rect rect = new Rect(0, 0, 200, 100);
     }
 }
